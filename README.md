@@ -1,8 +1,7 @@
 # RCode-Editor
 
-## A code editor that is the same as VSCode and Acode but combined.
+## A code editor that is the same as VSCode and Acode but combined
 
-# Code to make an plugin:
 
 ``` typescript
 

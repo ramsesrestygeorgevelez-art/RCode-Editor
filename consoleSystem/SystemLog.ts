@@ -26,5 +26,5 @@ class SystemLog {
         this.consoleHistory.clear();
     }
 }
-export default SystemLog;
-export { SystemLog };
+export default SystemLog
+export {SystemLog}

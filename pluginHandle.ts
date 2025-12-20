@@ -1,9 +1,11 @@
 class RCodePlugin {
   name: string;
   version: string;
-  constructor(name: string, version: string) {
+  wiki: webkitURL;
+  constructor(name: string, version: string, wiki: string) {
     this.name = name;
     this.version = version;
+    this.wiki = new URL(wiki , "")
   }
   getInfo(): string {
     return `${this.name} v${this.version}`;
@@ -19,6 +21,9 @@ class RCodePlugin {
   }
   addTheme(themeName: string): string {
     return `Theme ${themeName} added to plugin ${this.name}`;
+  }
+  setWiki(web: string) {
+       this.wiki.search = web
   }
 }
 class Setting {

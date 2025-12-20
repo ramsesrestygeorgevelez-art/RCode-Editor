@@ -1,4 +1,5 @@
-import SystemLog from "./";
+import { SystemLog } from "../consoleSystem/SystemLog";
+
 class Command {
     name: string
     description: string
