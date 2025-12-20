@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.navigator {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.navigator ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.navigator ul li {
+  display: inline-flex;
+}
+
+.navigator ul li button {
+  background: transparent;
+  border: none;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigator ul li button i {
+  font-size: 16px;
+  color: #bbbbbb;
+  transition: color 0.3s ease;
+}
+
+.navigator ul li button:hover,
+.navigator ul li button:focus {
+  background: #3a3a3a;
+  color: #fff;
+  outline: none;
+}
+
+.navigator ul li button:hover i,
+.navigator ul li button:focus i {
+  color: #fff;
+}
+
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navigator">
+    <ul>
+      <li><button><i class="fa-solid fa-file"></i> File</button></li>
+      <li><button><i class="fa-solid fa-pen"></i> Edit</button></li>
+      <li><button><i class="fa-solid fa-mouse-pointer"></i> Selection</button></li>
+      <li><button><i class="fa-solid fa-eye"></i> View</button></li>
+      <li><button><i class="fa-solid fa-location-arrow"></i> Go</button></li>
+      <li><button><i class="fa-solid fa-play"></i> Run</button></li>
+    </ul>
+  </nav>
+
+  <script src="System.ts"></script>
+  <script src="pluginHandle.ts"></script>
+</body>
+
+</html>
