@@ -69,7 +69,7 @@ export function fileExists(path: string): boolean {
 export function getFileType(path: string): string | null {
     const fileName = path.substring(path.lastIndexOf('/') + 1);
     const extension = fileName.substring(fileName.lastIndexOf('.') + 1);
-    if (extension && fileExists(fileName)) {
+    if (extension && fileExists(path)) {
         return extension;
     }
     if (path === "@creating") {
@@ -90,3 +90,4 @@ export function renameFile(oldPath: string, newPath: string): boolean {
 
 
 export { Folders };
+
